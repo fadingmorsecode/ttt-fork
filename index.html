@@ -13,15 +13,32 @@
   <body>
     <h1>Tic - Tac - Toe</h1>
 
+    <div class="PlayerNamesContainer">
+
+        <div class="player1">
+          <label>Player 1 name </label>
+          <input type="text" class="P1Name">
+        </div>
+        <div class="player2">
+          <label>Player 2 name</label>
+          <input type="text" class="P2Name">
+        </div>
+    </div>
+
+    <div class="startBTNContainer"> 
+    <button class="startBTN">START</button>
+  </div>
     
-      <div class="gameInfo">
+
+    
+      <div class="gameInfo" style="display: none;">
           <h2>Player Score</h2>
-          <div>Player1 (X) must select a cell!</div>
-          <div>Player1 score: </div>
-          <div>Player2 score: </div>
+          <div class="playerTurn">Player1 (X) must select a cell!</div>
+          <div class="P1Score">Player1 score: </div>
+          <div class="P2Score">Player2 score: </div>
       </div>
 
-      <div class="boardContainer">
+      <div class="boardContainer" style="display: none;">
         <div class="Cell0 Cell" value="0"></div>
         <div class="Cell1 Cell" value="1"></div>
         <div class="Cell2 Cell" value="2"></div>
